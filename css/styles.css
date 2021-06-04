@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+    height: 1300px;
+    background-image: url('../img/fondo.jpeg'); /*Ruta de la imagen*/
+    background-repeat: no-repeat; /*Para no repetir la imagen*/
+    background-position: center center; /*La centramos horizontal y verticalmente*/
+    background-attachment: fixed; /*La imagen se queda fija cuando damos scrool*/
+    background-size: cover; /*Propiedad para que ocupe toda la pantalla*/
+}
+
+
+/*Contenedor padre*/
+.container1{
+    margin-top: 50px;
+    border: 3px solid rgba(255, 255, 255, 0) ;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+/*Contenedor hijo*/
+.container2{
+    
+    display: flex;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;   
+
+    background-color: rgba(172, 255, 47, 0);
+
+    
+    
+}
+
+
+
+
+/*Bloque de informacion*/
+.info{
+    display: flex; /*Para poder mover los elementos*/
+    color:rgb(255, 255, 255);
+    flex-direction: column; /*Los elementos quedan en columna*/
+    justify-content: space-evenly; /*Dejan un espacio entre cada elemento*/
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(240, 248, 255, 0);
+    
+}
+.Name{
+    font-weight: bold;
+    margin-top: 20px;
+    margin: auto;
+    text-align: left;
+    
+}
+.Parrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+/*Bloque de imagen de perfil*/
+.imgPr{
+    /*Para dejar la foto con borde cicular, lo hicimos desde bootstrap directamente en la clase imagen con "rounded-circle*/
+
+    width: 200px;
+    height: 200px;
+    border-radius: 240px;
+    border: solid 4px white;
+    margin-left: 40px;
+
+}
+
+
+/*------------Bloque desplazamiento---------------*/
+
+.desp{
+    position: relative;
+    display: flex; /*Para alinearlo con justify y align*/
+    width: 100%;
+    height: 150px;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10px; /*Separarlo de la bienvenida y foto perfil*/
+
+   
+
+}
+
+
+
+/*Propiedades de la imagen*/
+.icon-des{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    cursor: pointer;
+   
+    border-radius: 60px;
+    border: solid white 3px;
+     
+}
+
+.icon-des:hover{
+    background-color: rgb(0, 0, 0);
+    border: solid black 1px;
+}
+
+/*---------ICONOS REDES SOCIALES------------*/
+.social-net{
+    position: fixed; /*Fixed para que pueda usarse sticky en los li*/
+    display: flex; /*Para alinearlo con justify y align*/
+    width: 100%;
+    top:90%; /*Al 90 para que se ponga al pie de pagina*/
+    left: 0%; /*Left 0 para que ocupe toda el ancho*/
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10px; /*Separarlo de la bienvenida y foto perfil*/
+    border: solid 2px rgba(255, 255, 255, 0);
+   
+   
+}
+li{
+    display: inline; /*para ponerlas en vertical*/
+    list-style: none;
+    float: left; /*Que se pongan de izq a derecha*/
+    padding: 0px 5px;
+    justify-content: center;
+    
+    
+}
+li a{
+    position: sticky;
+    top: 0px;
+    display: inline-block;
+}
+/*Modificar tamaño de iconos*/
+.reds{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
